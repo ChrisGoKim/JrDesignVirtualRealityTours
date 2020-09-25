@@ -967,3 +967,14 @@ textarea {
 	margin-right: auto;
 	margin-bottom: 1.5em;
 }
+
+div.headercontainer {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: xx-small;
+	background-color: firebrick;
+	width: 100%;
+	height: 500px;
+	position: absolute;
+	margin: auto;
+	padding: 10px;
+}
