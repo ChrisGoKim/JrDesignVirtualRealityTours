@@ -50,6 +50,80 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 --------------------------------------------------------------*/
 
+a[rel="home"] {
+	color: rgba(255, 255, 255, 1);
+	text-decoration: none;
+	font-size: 30px;
+	text-shadow: -1px 1px 1px #522,
+				  1px 1px 1px #522,
+				  1px -1px 0 #522,
+				  -1px -1px 0 #522;
+}
+
+a {
+	color: rgba(255, 255, 255, 1);
+}
+
+#masthead {
+	background-color: rgba(167, 37, 60, 1);
+	font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+	text-emphasis-color: rgba(255,255,255,1);
+	font-size: 28px;
+	padding-bottom: 10px;
+	border-style: double;
+	border-color: rgba(200, 80, 100, 1);
+	border-bottom-width: 8px;
+	border-top-width: 12px;
+	border-left-width: 12px;
+	height: 175px;
+}
+
+h1 {
+	background-color: rgba(255,255,255,1);
+	/*font-size: 18px;*/
+	color: rgba(75, 50, 50, 1);
+	font-size: 24px;
+	/*font-style: italic;*/
+	padding-left: 35px;
+	text-shadow: -1px -1px 0 #977;
+}
+
+#site-navigation {
+	padding-left: 35px;
+	text-decoration: none;
+	font-size: 20px;
+	text-shadow: -1px 1px 1px #522,
+				  1px 1px 1px #522,
+				  1px -1px 0 #522,
+				  -1px -1px 0 #522;
+}
+
+p {
+	padding-left: 35px;
+}
+
+img {
+	padding-left: 35px;
+}
+
+#colophon {
+	background-color: rgba(167, 37, 60, 1);
+	padding: 25px;
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	border-style: double;
+	border-color: rgba(200, 80, 100, 1);
+	border-bottom-width: 12px;
+	border-left-width: 12px;
+	border-top-width: 8px;
+}
+
+span[class="sep"] {
+	padding: 5px;
+	color: rgba(175,175,175,1);
+}
+
+
+
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -90,12 +164,12 @@ main {
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
+ * `article` contexts in Chrome, Firefox, and Safari. - removed to prevent conflict with H1 changes above
  */
-h1 {
+/*h1 {
 	font-size: 2em;
 	margin: 0.67em 0;
-}
+}*/
 
 /* Grouping content
 	 ========================================================================== */
@@ -530,9 +604,9 @@ table {
 	width: 100%;
 }
 
-/* Links
+/* Links -removed to prevent link discoloration
 --------------------------------------------- */
-a {
+/*a {
 	color: #4169e1;
 }
 
@@ -554,7 +628,7 @@ a:hover,
 a:active {
 	outline: 0;
 }
-
+*/
 /* Forms
 --------------------------------------------- */
 button,
