@@ -151,6 +151,54 @@ function tourstheme_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'tourstheme_scripts' );
 
+function CCVT_custom_header_setup() {
+    $defaults = array(
+        // Default Header Image to display
+        'default-image'         => get_template_directory_uri() . '/images/logo.jpg',
+        // Display the header text along with the image
+        'header-text'           => false,
+        // Header text color default
+        'default-text-color'        => '000',
+        // Header image width (in pixels)
+        'width'             => 200,
+        // Header image height (in pixels)
+        'height'            => 200,
+        // Header image random rotation default
+        'random-default'        => false,
+        // Enable upload of image file in admin 
+        'uploads'       => false,
+        // function to be called in theme head section
+        'wp-head-callback'      => 'wphead_cb',
+        //  function to be called in preview page head section
+        'admin-head-callback'       => 'adminhead_cb',
+        // function to produce preview markup in the admin screen
+        'admin-preview-callback'    => 'adminpreview_cb',
+		);
+	$header_info = array(
+		//These are the values that overwrite the defaults.
+		'flex-width'	=> true,
+		'width'         => 100,
+		'flex-height'	=> true,
+		'height'        => 100,
+		'default-image' => get_template_directory_uri() . '/images/logo.jpg',
+		); add_theme_support( 'custom-header', $header_info );
+		 
+	$header_images = array(
+		'logo' => array(
+				'url'           => get_template_directory_uri() . '/images/logo.jpg',
+				'thumbnail_url' => get_template_directory_uri() . '/images/logo.jpg',
+				'description'   => 'Cobb County Schools Logo',
+			),
+		'dud' => array(
+				'url'           => get_template_directory_uri() . '/images/logo.jpg',
+				'thumbnail_url' => get_template_directory_uri() . '/images/logo.jpg',
+				'description'   => 'Flower',
+			),  
+		);
+		register_default_headers( $header_images );
+}
+add_action( 'after_setup_theme', 'CCVT_custom_header_setup' );
+
 /**
  * Implement the Custom Header feature.
  */
