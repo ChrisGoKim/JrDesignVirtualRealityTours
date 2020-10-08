@@ -2,7 +2,7 @@
 Theme Name: ToursTheme
 Author: JD Team 0104
 Description: Description
-Version: 1.0.1
+Version: 1.0.2
 Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
@@ -96,14 +96,6 @@ h1 {
 				  -1px -1px 0 #522;
 }
 
-p {
-	padding-left: 35px;
-}
-
-img {
-	padding-left: 35px;
-}
-
 #colophon {
 	background-color: rgba(167, 37, 60, 1);
 	padding: 25px;
@@ -158,6 +150,7 @@ body {
  */
 main {
 	display: block;
+	margin: 1.5em 3em 1.5em 3em;
 }
 
 /**
