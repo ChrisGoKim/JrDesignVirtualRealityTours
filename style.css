@@ -2,7 +2,7 @@
 Theme Name: ToursTheme
 Author: JD Team 0104
 Description: Description
-Version: 1.0.2
+Version: 1.0.3
 Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
@@ -112,6 +112,9 @@ span[class="sep"] {
 	color: rgba(175,175,175,1);
 }
 
+aside {
+	margin: 2em 10em 2em 10em;
+}
 
 
 /*--------------------------------------------------------------
@@ -141,16 +144,16 @@ html {
 /**
  * Remove the margin in all browsers.
  */
-body {
+/**body {
 	margin: 0;
 }
-
+*/
 /**
  * Render the `main` element consistently in IE.
  */
 main {
 	display: block;
-	margin: 1.5em 3em 1.5em 3em;
+	margin: 2em 10em 2em 10em;
 }
 
 /**
