@@ -12,6 +12,9 @@
  * @package ToursTheme
  */
 
+/** This specific method is simply the header requester function for the web application via the WordPress framework
+*/
+
 get_header();
 ?>
 
