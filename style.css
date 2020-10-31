@@ -2,7 +2,7 @@
 Theme Name: ToursTheme
 Author: JD Team 0104
 Description: Description
-Version: 1.0.3
+Version: 1.0.5
 Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
@@ -59,10 +59,13 @@ a[rel="home"] {
 }
 
 /*
-Links should be white
+Links in the header/footer should be white; links in main should be blue
 */
 a {
 	color: rgba(255, 255, 255, 1);
+}
+.site-main a {
+	color: blue;
 }
 
 #masthead {
