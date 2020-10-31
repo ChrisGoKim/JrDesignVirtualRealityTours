@@ -59,14 +59,12 @@ a[rel="home"] {
 }
 
 /*
-Links in the header/footer should be white; links in main should be blue
+Links in the header/footer should be white; links in the main class should be black
 */
 a {
 	color: rgba(255, 255, 255, 1);
 }
-.site-main a {
-	color: blue;
-}
+.site-main a { color: rgba(0,0,0,1); }
 
 #masthead {
 	background-color: rgba(167, 37, 60, 1);
