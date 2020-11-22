@@ -18,6 +18,7 @@ get_header();
 	<main id="primary" class="site-main">
 
 		<?php
+		//Loop will iterate for as long as there are posts
 		while ( have_posts() ) :
 			the_post();
 
